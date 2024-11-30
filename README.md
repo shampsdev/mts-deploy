@@ -1,15 +1,20 @@
 # Репозиторий для быстрого развертывания на сервере
 
 ## Введение
-Для развертывания мы написали `docker-compose.yaml` и `Helm chart` файлы для `k3s` (важно: в качестве `ingress controller` используется `traefik`, поэтому не на `k3s` может сразу не завестись проект.)
+Для развертывания мы написали `docker-compose.yaml` и `Helm chart` файлы для `k3s` (важно: в качестве `ingress controller` используется `traefik`, поэтому не на `k3s` может не запуститься проект.)
 
 Репозитории:
-    - [Бекенд](https://github.com/shampsdev/mts-backend)
-    - [Фронтенд](https://github.com/shampsdev/mts-frontend)
+  - [Бекенд](https://github.com/shampsdev/mts-backend)
+  - [Фронтенд](https://github.com/shampsdev/mts-frontend)
 
 Обзор:
-    - [Бекенд](https://api.mts.shamps.dev)
-    - [Фронтенд](https://mts.shamps.dev)
+  - [Бекенд](https://api.mts.shamps.dev)
+  - [Фронтенд](https://mts.shamps.dev)
+
+Зависимости (на ваш вкус):
+  - [docker](https://docs.docker.com/engine/install/ubuntu/)
+  - [k3s](https://docs.k3s.io/quick-start)
+  - [helm](https://helm.sh/docs/intro/install/)
 
 ## Как поднять?
 ### k3s
