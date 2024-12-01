@@ -20,6 +20,7 @@
 Обзор:
   - [Бекенд](https://api.mts.shamps.dev/docs/index.html)
   - [Фронтенд](https://mts.shamps.dev)
+  - [Видео](https://drive.google.com/drive/folders/1W8NXPd4AA7SirpcoB3FsHZm-85DlATF5?usp=sharing)
 
 Зависимости (на ваш вкус):
   - [docker](https://docs.docker.com/engine/install/ubuntu/)
