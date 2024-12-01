@@ -16,7 +16,7 @@
   - [Фронтенд](https://github.com/shampsdev/mts-frontend)
 
 Обзор:
-  - [Бекенд](https://api.mts.shamps.dev)
+  - [Бекенд](https://api.mts.shamps.dev/docs/index.html)
   - [Фронтенд](https://mts.shamps.dev)
 
 Зависимости (на ваш вкус):
@@ -25,16 +25,25 @@
   - [helm](https://helm.sh/docs/intro/install/)
 
 ## Как поднять?
-### k3s
-пупупуп
-
 ### Docker
 Достаточно поднять с помощью:
 ```
 docker-compose -f docker-compose.local.yaml up --build -d
 ```
 
+Чтобы проверить:
+ - Бекенд тут: http://localhost:8000/docs/index.html
+ - Фронтенд тут: http://localhost:3000/
+
 Для запуска на "продакшн" запустить скрипт:
 ```
 ./docker-start
+```
+
+### k3s
+Важно, что для запуска необходимо изменить в `values` хосты у фронтенда и бекенда на свои (в k3s настроен по умолчанию траефик). Переписывать два варианта или чтобы можно было запустить без них времени не было, поэтому сделали, чтобы сертификаты выдавались и обновлялись траефиком.
+
+Для запуска:
+```
+helm install mts ./mts
 ```
