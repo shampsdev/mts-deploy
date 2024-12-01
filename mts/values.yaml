@@ -10,7 +10,7 @@ backend:
   port: 8000
   image:
     repository: shampiniony/mts-backend
-    tag: 0.1.13
+    tag: 0.1.14
   resources:
     requests:
       cpu: "250m"
