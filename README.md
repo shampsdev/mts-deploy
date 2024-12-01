@@ -13,6 +13,9 @@
 
 не так ВАЖНО: в качестве `ingress controller` используется встроенный `traefik`, поэтому не на `k3s` может не запуститься проект.
 
+ВИДЕО ОБЗОР МОЖНО ПОСМОТРЕТ ТУТ:
+https://drive.google.com/drive/folders/1W8NXPd4AA7SirpcoB3FsHZm-85DlATF5?usp=sharing
+
 Репозитории:
   - [Бекенд](https://github.com/shampsdev/mts-backend)
   - [Фронтенд](https://github.com/shampsdev/mts-frontend)
