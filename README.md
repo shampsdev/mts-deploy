@@ -28,7 +28,7 @@
 docker-compose -f docker-compose.local.yaml up --build -d
 ```
 
-Для запуска на "продакшн" сервере с доменом вызвать ./prod-compose и запустить:
+Для запуска на "продакшн" запустить скрипт:
 ```
-docker-compose -f docker-compose.prod.yaml up --build -d
+./docker-start
 ```
