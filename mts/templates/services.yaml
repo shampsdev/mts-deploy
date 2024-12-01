@@ -11,3 +11,18 @@ spec:
       port: 80
       targetPort: {{ .Values.backend.port }}
   type: NodePort
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.frontend.name }}
+  namespace: {{ .Values.namespace }}
+spec:
+  selector:
+    app: {{ .Values.frontend.name }}
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: {{ .Values.frontend.port }}
+  type: NodePort
