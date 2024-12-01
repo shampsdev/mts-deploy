@@ -22,5 +22,9 @@ echo "Сеть успешно создана"
 
 sed -i "s/%DOMAIN%/$DOMAIN/g" ./docker-compose.prod.yaml
 
+echo "Запуск сервисов..."
+
+docker compose -f docker-compose.prod.yaml up --build -d
+
 echo "Фронтенд запущен на https://$DOMAIN"
 echo "Бекенд запущен на https://api.$DOMAIN"
